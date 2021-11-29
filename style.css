@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Vollkorn&display=swap');
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url("./Assets/bg_1.png");
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Vollkorn', serif;
+    font-size: 120px;
+    font-weight: initial;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: initial;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: initial;
+}
+
+button {
+    
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+button:hover {
+    cursor: pointer;
+    transition-duration: 0.1s;
+    
+    font-size: 48px !important;
+}
+
+button:active {
+    
+    transition-duration: 0.1s;
+    font-size: 36px !important;
+}
+
+.head {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 2;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,0));
+}
+
+.nav-btn {
+    width: 100px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-name {
+    width: 100px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.indicators {
+    
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.indicators #circle {
+    width: 16px;
+    height: 16px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 24px
+}
+
+.indicators #circle-active {
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    margin: 24px
+}
+
+.nav-menu {
+    z-index: 1;
+    
+    display: flex;
+    position: fixed;
+    
+    width: 200px;
+    height: 100vh;
+    
+    transform: translateX(-200px);
+
+    justify-content: center;
+    align-content: center;
+
+    background-color: black;
+}
+
+.nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+}
+
+.nav-menu li {
+    list-style-type: none;
+
+    padding-bottom: 64px;
+
+    font-size: 24px;
+}
+
+.main-content {
+    z-index: -1;
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 128px;
+}
