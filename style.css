@@ -4,6 +4,7 @@
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+.material-icons.md-72 { font-size: 72px; }
 
 * {
     margin: 0;
@@ -45,17 +46,30 @@ button {
     text-shadow: 0px 0px 0px transparent;
 }
 
-button:hover {
+.material-icons.md-36:hover {
     cursor: pointer;
     transition: font-size 0.1s ease-out;
     
-    font-size: 48px !important;
+    font-size: 48px;
 }
 
-button:active {
+.material-icons.md-36:active {
     
     transition: font-size 0.1s ease-out;
-    font-size: 36px !important;
+    font-size: 36px;
+}
+
+.material-icons.md-72:hover {
+    cursor: pointer;
+    transition: font-size 0.1s ease-out;
+    
+    font-size: 84px;
+}
+
+.material-icons.md-72:active {
+    
+    transition: font-size 0.1s ease-out;
+    font-size: 72px;
 }
 
 /*styling for the black loading screen*/
@@ -70,7 +84,7 @@ button:active {
     transition-duration: 0.5s;
 }
 
-.preload-finish {
+.preload.hidden {
     opacity: 0;
     pointer-events: none;
 }
@@ -135,6 +149,22 @@ button:active {
     margin: 24px
 }
 
+.down-button {
+    width: 108px;
+    height: 108px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+
+
+}
+
 .sidebar {
     z-index: 1;
     
@@ -169,8 +199,6 @@ button:active {
 }
 
 .main-content {
-    z-index: -1;
-    
     width: 100vw;
     height: 100vh;
     display: flex;

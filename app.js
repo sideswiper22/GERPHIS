@@ -7,7 +7,7 @@ window.addEventListener('load', OnPageLoad());
 //function that disables the loading screen once the page loads completely
 function OnPageLoad() {
     const preload = document.querySelector('.preload');
-    preload.classList.add('preload-finish');
+    preload.classList.add('hidden');
 
     tl.fromTo(".landing", {y:-50,opacity: 0}, {y:0,opacity:1,duration: 0.5, delay: 0.5});
 }
