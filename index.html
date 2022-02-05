@@ -16,38 +16,86 @@
             <div class="nav-btn">
                 <button class="material-icons md-36" onclick="ToggleNav()">menu</i>
             </div>
+            <div class="header-holder">
+                <div class="header-button">
+                    <button onclick="window.location.href='./index.html';" class="material-icons md-36">home</i>
+                </div>
+                <div class="header-button">
+                    <button class="material-icons md-36">dashboard</i>
+                </div>
+                <div class="header-button">
+                    <button class="material-icons md-36">person</i>
+                </div>
+                <div class="header-button">
+                    <button class="material-icons md-36">feed</i>
+                </div>
+            </div>
             <div class="web-name">
                 <h3>Y11</h3>
             </div>
         </div>
+        <div class="headbg">
+
+        </div>
         <div class="sidebar">
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="#">Button 1</a></li>
-                <li><a href="#">Button 2</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Mga Paksa</a></li>
+                <li id="sub"><a href="#">Panimula</a></li>
+                <li id="sub"><a href="#">Karagdagang Impormasyon</a></li>
+                <li id="sub"><a href="#">Kasalukuyan</a></li>
+                <li id="sub"><a href="#">Gobyerno</a></li>
+                <li id="sub"><a href="#">Solusyon</a></li>
+                <li id="sub"><a href="#">Kamalayan</a></li>
+                <li><a href="#">References</a></li>
+                <li><a href="#">About Us</a></li>
             </ul>
         </div>
     </div>
     
-    <div class="main-content">
-        <div class="indicators">
-            <div id="circle-active"></div>
-            <div id="circle"></div>
-            <div id="circle"></div>
+    <div class="home-elements">
+        <div class="scrollindicators">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+            <div class="circle5"></div>
+        </div>
+        <div class="up-button">
+            <button class="material-icons md-72" onclick="ScrollUp()">keyboard_arrow_up</i>
         </div>
         <div class="down-button">
-            <button class="material-icons md-72" onclick="#">keyboard_arrow_down</i>
+            <button class="material-icons md-72" onclick="ScrollDown()">keyboard_arrow_down</i>
         </div>
-        <div class="landing1">
-            <h1>KAHIRAPAN</h1>
-            <h2>poverty in the Philippines</h2>
-        </div>
-        <div class="landing2"></div>
+    </div>
+
+    <div class="main-content">
+        <section class="landing">
+            <h1 style="color: #12178B;">KAHIRAPAN</h1>
+            <h2 style="color: #982828;">POVERTY IN THE PHILIPPINES</h2>
+        </section>
+        <section class="content" id="m1">
+            Section 1
+        </section>
+        <section class="content" id="m2">
+            Section 2
+        </section>
+        <section class="content" id="m3">
+            Section 3
+        </section>
+        <section class="content" id="m4">
+            Section 4
+        </section>
+        <section class="footer">
+            GERPHIS - Y11</br>
+            ANTONIO, CORPUZ, DIAZ</br>
+            PECATE, POBLETE, SALVACION, TORRES</br>
+            JAN - FEB 2022
+        </section>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
