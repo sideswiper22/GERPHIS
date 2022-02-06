@@ -393,9 +393,10 @@ button {
     width: 100%;
 
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 32% 32% 32%;
     grid-template-rows: 50% 50%;
     grid-gap: 10px;
+    justify-content: center;
 }
 
 .topic {
@@ -486,12 +487,148 @@ button {
     color: #12178B;
 }
 
+#impormasyon.content {
+    padding-top: 164px;
+    padding-bottom: 128px;
+}
+
+#impormasyon.content h1{
+    font-size: 72px;
+    text-align: center;
+
+    color: #12178B;
+}
+
+#lagay.content {
+    padding-top: 164px;
+    padding-bottom: 128px;
+}
+
+#lagay.content h1{
+    font-size: 72px;
+    text-align: center;
+
+    color: #12178B;
+}
+
+#lagay.content h2{
+    font-size: 36px;
+    text-align: center;
+
+    color: #982828;
+}
+
+#gobyerno.content {
+    padding-top: 164px;
+    padding-bottom: 128px;
+    align-items: center;
+}
+
+#gobyerno.content h1{
+    font-size: 72px;
+    text-align: center;
+
+    color: #12178B;
+}
+
+#gobyerno.content h2{
+    font-size: 36px;
+    text-align: center;
+
+    color: #982828;
+}
+
+#gobyerno.content ol li{
+    width: 70vw;
+    list-style-position: inside;
+    color: black;
+    font-size: 32px;
+    font-weight: 800;
+    padding-top: 32px;
+}
+
+#gobyerno.content ol p{
+    width: 70vw;
+    font-size: 24px;
+    text-align: justify;
+}
+
+#solusyon.content {
+    padding-top: 164px;
+    padding-bottom: 128px;
+
+    align-items: center;
+}
+
+#solusyon.content h1{
+    font-size: 72px;
+    text-align: center;
+
+    color: #12178B;
+}
+
+#solusyon.content h2{
+    font-size: 36px;
+    text-align: center;
+
+    color: #982828;
+    
+    padding-bottom: 32px;
+}
+
+#solusyon.content p{
+    width: 70vw;
+    text-align: justify;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+#kamalayan.content {
+    padding-top: 164px;
+    padding-bottom: 128px;
+
+    align-items: center;
+}
+
+#kamalayan.content h1{
+    font-size: 72px;
+    text-align: center;
+
+    color: #12178B;
+}
+
+#kamalayan.content h2{
+    font-size: 36px;
+    text-align: center;
+
+    color: #982828;
+    
+    padding-bottom: 32px;
+}
+
+#kamalayan.content ol li{
+    width: 70vw;
+    list-style-position: inside;
+    color: black;
+    font-size: 32px;
+    font-weight: 800;
+    padding-top: 32px;
+}
+
+#kamalayan.content ol p{
+    width: 70vw;
+    font-size: 24px;
+    text-align: justify;
+}
+
 p {
     padding: 28px;
     text-align: center;
     font-size: 28px;
     font-weight: 500;
     color: black;
+
+    line-height: 40px;
 }
 
 .iphoto-holder-2 {
@@ -499,11 +636,13 @@ p {
     height: 40vh;
 
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 49%;
     grid-gap: 32px;
 
     margin-top: 32px;
     margin-bottom: 32px;
+    
+    justify-content: center;
 }
 
 .iphoto-holder-1 {
@@ -515,6 +654,8 @@ p {
 
     margin-top: 32px;
     margin-bottom: 32px;
+    
+    justify-content: center;
 }
 
 .iphoto {
@@ -547,6 +688,109 @@ p {
 
 #populasyon.iphoto {
     background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("./Assets/Panimula5.jpg");
+}
+
+#lagay.iphoto-holder-2{
+    height: 38vh;
+
+    grid-template-columns: 58% 40%;
+}
+
+#lagay1.iphoto p{
+    text-align: justify;
+    font-style: normal;
+
+    padding: unset;
+}
+
+#lagay2.iphoto {
+    background-image: linear-gradient(rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.5)), url("./Assets/Kasalukuyang\ lagay\ ng\ Kahirapan\ sa\ Pilipinas\ sa\ Gitna\ ng\ Epidemya\ \(2\).png");
+}
+
+#gobyerno.iphoto-holder-2 {
+    width: 70vw;
+    height: 40vh;
+
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 32px;
+
+    margin-top: 32px;
+    margin-bottom: 32px;
+    
+    justify-content: center;
+}
+
+#gobyerno1.iphoto {
+    background-image: linear-gradient(rgba(40, 40, 40, 0.4), rgba(40, 40, 40, 0.4)), url("./Assets/Gobyerno\ at\ ang\ Kahirapan\ sa\ Pilipinas\ \(1\).jpg");
+}
+
+#gobyerno2.iphoto {
+    background-image: linear-gradient(rgba(40, 40, 40, 0.4), rgba(40, 40, 40, 0.4)), url("./Assets/Gobyerno\ at\ ang\ Kahirapan\ sa\ Pilipinas\ \(2\).jpg");
+}
+
+#gobyerno3.iphoto {
+    background-image: linear-gradient(rgba(40, 40, 40, 0.4), rgba(40, 40, 40, 0.4)), url("./Assets/Gobyerno\ at\ ang\ Kahirapan\ sa\ Pilipinas\ \(3\).jpg");
+}
+
+#gobyerno4.iphoto {
+    background-image: linear-gradient(rgba(40, 40, 40, 0.4), rgba(40, 40, 40, 0.4)), url("./Assets/Gobyerno\ at\ ang\ Kahirapan\ sa\ Pilipinas\ \(4\).jpg");
+}
+
+#solusyon1.iphoto {
+    min-height: 20vh;
+    width: 70vw;
+    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("./Assets/Sol1.jfif");
+    background-position: 50% 60%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#solusyon2.iphoto {
+    min-height: 20vh;
+    width: 70vw;
+    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("./Assets/Sol2.jfif");
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#solusyon3.iphoto {
+    min-height: 20vh;
+    width: 70vw;
+    background-position: 50% 60%;
+    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("./Assets/Sol3.jfif");
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#kamalayan.iphoto-holder-2 {
+    width: 70vw;
+    height: 40vh;
+
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 32px;
+
+    margin-top: 32px;
+    margin-bottom: 32px;
+    
+    justify-content: center;
+}
+
+#kamalayan1.iphoto {
+    background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url("./Assets/Sol5.1.png");
+}
+
+#kamalayan2.iphoto {
+    background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url("./Assets/Sol5.2.png");
+}
+
+#kamalayan3.iphoto {
+    background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url("./Assets/Sol6.1.jpg");
+}
+
+#kamalayan4.iphoto {
+    background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url("./Assets/Sol6.2.jpg");
 }
 
 #about.content {
