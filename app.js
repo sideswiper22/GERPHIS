@@ -15,7 +15,11 @@ window.addEventListener('load', OnPageLoad());
 //function that disables the loading screen once the page loads completely
 function OnPageLoad() {
     const preload = document.querySelector('.preload');
-    preload.classList.add('hidden');
+    if (preload != null)
+    {
+        preload.classList.add('hidden');
+    }
+
     upButton.classList.add('hidden');
     circle1.classList.add('circleactive');
     scroll = 0;

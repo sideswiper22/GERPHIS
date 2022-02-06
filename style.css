@@ -37,6 +37,23 @@ h3 {
     font-weight: initial;
 }
 
+h4 {
+    font-family: 'Vollkorn', serif;
+    font-size: 24px;
+    font-weight: initial;
+}
+
+h5 {
+    font-family: 'Vollkorn', serif;
+    font-size: 16px;
+    font-weight: initial;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: initial;
+}
+
 button {
     
     background: transparent;
@@ -76,9 +93,9 @@ button {
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 200;
+    z-index: 2;
     
-    background-color: black;
+    background-color: #c8c8c8;
 
     transition-duration: 0.5s;
 }
@@ -96,7 +113,7 @@ button {
     justify-content: space-between;
 
     position: fixed;
-    z-index: 2;
+    z-index: 5;
 }
 
 .headbg{
@@ -106,7 +123,7 @@ button {
     
     background: #B0A164;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
 }
 
 .nav-btn {
@@ -222,7 +239,6 @@ button {
 }
 
 .up-button.hidden {
-    transition: opacity 0.1s ease-out;
     opacity: 0;
     pointer-events: none;
 }
@@ -246,13 +262,12 @@ button {
 }
 
 .down-button.hidden {
-    transition: opacity 0.1s ease-out;
     opacity: 0;
     pointer-events: none;
 }
 
 .sidebar {
-    z-index: 1;
+    z-index: 4;
     
     display: flex;
     position: fixed;
@@ -286,6 +301,10 @@ button {
 
     font-size: 24px;
     font-weight: 400;
+}
+
+.sidebar a:hover {
+    color: gainsboro;
 }
 
 .sidebar li#sub {
@@ -336,13 +355,15 @@ button {
 }
 
 .content {
+    min-height: 100vh;
+    
     width: 100vw;
-    height: 100vh;
+    height: unset;
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: center;
 
+    padding-top: 100px;
     padding-left: 128px;
     padding-right: 128px;
 }
@@ -351,16 +372,188 @@ button {
     background-color: rgb(53, 53, 53);
 }
 
-#m2.content{
+#m2.content {
     
 }
 
-#m3.content{
+#m3.content {
     background-color: rgb(175, 67, 67);
 }
 
-#m4.content{
+#m4.content {
     
+}
+
+#topic.content {
+    justify-content:  center;
+}
+
+.topic-holder {
+    height: 80vh;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 10px;
+}
+
+.topic {
+    background-color: mediumaquamarine;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+    font-family: 'Vollkorn', serif;
+    font-size: 48px;
+    font-weight: initial;
+    text-align: center;
+
+    padding: 20px;
+    
+    opacity: 0;
+    transition:all 0.25s;
+}
+
+.topic:hover {
+    font-size: 56px;
+}
+
+#panimula.topic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Assets/Panimula3.jpg");
+    
+}
+
+#panimula.topic:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./Assets/Panimula3.jpg");
+    
+}
+
+#impormasyon.topic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Assets/Info\ about\ Poverty1.jpg");
+}
+
+#impormasyon.topic:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./Assets/Info\ about\ Poverty1.jpg");
+}
+
+#lagay.topic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Assets/Kasalukuyang\ lagay\ ng\ Kahirapan\ sa\ Pilipinas\ sa\ Gitna\ ng\ Epidemya\ \(1\).png");
+}
+
+#lagay.topic:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./Assets/Kasalukuyang\ lagay\ ng\ Kahirapan\ sa\ Pilipinas\ sa\ Gitna\ ng\ Epidemya\ \(1\).png");
+}
+
+#gobyerno.topic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Assets/Gobyerno\ at\ ang\ Kahirapan\ sa\ Pilipinas\ \(4\).jpg");
+}
+
+#gobyerno.topic:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./Assets/Gobyerno\ at\ ang\ Kahirapan\ sa\ Pilipinas\ \(4\).jpg");
+}
+
+#solusyon.topic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Assets/Sol1.jfif");
+}
+
+#solusyon.topic:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./Assets/Sol1.jfif");
+}
+
+#kamalayan.topic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Assets/Sol6.3.png");
+}
+
+#kamalayan.topic:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./Assets/Sol6.3.png");
+}
+
+#about.content {
+    padding-top: 164px;
+}
+
+#about.content h1{
+    font-size: 72px;
+    text-align: center;
+
+    color: #12178B;
+}
+
+#about.content h2{
+    font-size: 36px;
+    text-align: center;
+
+    color: #982828;
+}
+
+.members {
+    height: 100%;
+    width: 100%;
+    
+    display: inline-flex;
+    justify-content: space-between;
+
+    padding-top: 64px;
+}
+
+.member-card {
+    width: 12vw;
+    
+    margin: 5px;
+    padding: 20px;
+    border-radius: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    
+    background-color: #7c7c7c;
+}
+
+.member-card img {
+    width: 90%;
+    
+    border-radius: 50%;
+}
+
+.member-card h4 {
+    padding-top: 40px;
+}
+
+.member-card h5 {
+    padding-bottom: 20px;
+}
+
+#ref.content {
+    padding-top: 164px;
+    padding-bottom: 128px;
+}
+
+#ref.content h1{
+    font-size: 72px;
+    text-align: center;
+
+    color: #12178B;
+}
+
+#ref.content ul{
+    padding-top: 20px;
+}
+
+#ref.content li{
+    display: list-item;
+    list-style-position: inside;
+    font-size: 22px;
+    color: black;
 }
 
 .footer {
