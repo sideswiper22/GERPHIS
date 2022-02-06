@@ -693,7 +693,7 @@ p {
 #lagay.iphoto-holder-2{
     height: 38vh;
 
-    grid-template-columns: 58% 40%;
+    grid-template-columns: auto 35%;
 }
 
 #lagay1.iphoto p{
