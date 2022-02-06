@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;800&family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;800&family=Vollkorn&display=swap');
 
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -472,6 +472,81 @@ button {
 
 #kamalayan.topic:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./Assets/Sol6.3.png");
+}
+
+#panimula.content {
+    padding-top: 164px;
+    padding-bottom: 128px;
+}
+
+#panimula.content h1{
+    font-size: 72px;
+    text-align: center;
+
+    color: #12178B;
+}
+
+p {
+    padding: 28px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+}
+
+.iphoto-holder-2 {
+    width: 100%;
+    height: 40vh;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 32px;
+
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.iphoto-holder-1 {
+    width: 100%;
+    height: 40vh;
+
+    display: grid;
+    grid-gap: 32px;
+
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.iphoto {
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    
+    line-height: 56px;
+
+    padding: 10%;
+}
+
+#edukasyon.iphoto {
+    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("./Assets/Panimula1.jpg");
+}
+
+#agrikultura.iphoto {
+    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("./Assets/Panimula2.jpg");
+}
+
+#populasyon.iphoto {
+    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("./Assets/Panimula5.jpg");
 }
 
 #about.content {
