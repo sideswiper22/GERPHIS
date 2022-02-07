@@ -137,6 +137,7 @@ mainContent.addEventListener("scroll", () => {
         circle4.classList.remove('circleactive');
         circle5.classList.add('circleactive');
         circle6.classList.remove('circleactive');
+        upButton.querySelector('.material-icons.md-72').classList.remove('anim');
         scroll = 4;
         if (scroll != currentscroll)
         {
