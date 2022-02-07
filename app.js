@@ -2,6 +2,7 @@
 
 var nav = 0;
 var scroll = 0;
+var currentscroll = 0;
 const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
 const upButton = document.querySelector('.up-button');
 const downButton = document.querySelector('.down-button');
@@ -11,6 +12,7 @@ const circle2 = document.querySelector('.circle2');
 const circle3 = document.querySelector('.circle3');
 const circle4 = document.querySelector('.circle4');
 const circle5 = document.querySelector('.circle5');
+const circle6 = document.querySelector('.circle6');
 window.addEventListener('load', OnPageLoad());
 //function that disables the loading screen once the page loads completely
 function OnPageLoad() {
@@ -21,6 +23,7 @@ function OnPageLoad() {
     }
 
     upButton.classList.add('hidden');
+    downButton.querySelector('.material-icons.md-72').classList.add('anim');
     circle1.classList.add('circleactive');
     scroll = 0;
 
@@ -65,7 +68,14 @@ mainContent.addEventListener("scroll", () => {
         circle3.classList.remove('circleactive');
         circle4.classList.remove('circleactive');
         circle5.classList.remove('circleactive');
+        circle6.classList.remove('circleactive');
+        downButton.querySelector('.material-icons.md-72').classList.add('anim');
         scroll = 0;
+        if (scroll != currentscroll)
+        {
+            tl.to(mainContent, {duration: 0.5, scrollTo: document.querySelector('.landing').offsetHeight*scroll});
+            currentscroll = scroll;
+        }
     }
     else if (mainContent.scrollTop > document.querySelector('.landing').offsetHeight*0.5 && mainContent.scrollTop <= document.querySelector('.landing').offsetHeight*1.5)
     {
@@ -75,7 +85,14 @@ mainContent.addEventListener("scroll", () => {
         circle3.classList.remove('circleactive');
         circle4.classList.remove('circleactive');
         circle5.classList.remove('circleactive');
+        circle6.classList.remove('circleactive');
+        downButton.querySelector('.material-icons.md-72').classList.remove('anim');
         scroll = 1;
+        if (scroll != currentscroll)
+        {
+            tl.to(mainContent, {duration: 0.5, scrollTo: document.querySelector('.landing').offsetHeight*scroll});
+            currentscroll = scroll;
+        }
     }
     else if (mainContent.scrollTop > document.querySelector('.landing').offsetHeight*1.5 && mainContent.scrollTop <= document.querySelector('.landing').offsetHeight*2.5)
     {
@@ -85,7 +102,13 @@ mainContent.addEventListener("scroll", () => {
         circle3.classList.add('circleactive');
         circle4.classList.remove('circleactive');
         circle5.classList.remove('circleactive');
+        circle6.classList.remove('circleactive');
         scroll = 2;
+        if (scroll != currentscroll)
+        {
+            tl.to(mainContent, {duration: 0.5, scrollTo: document.querySelector('.landing').offsetHeight*scroll});
+            currentscroll = scroll;
+        }
     }
     else if (mainContent.scrollTop > document.querySelector('.landing').offsetHeight*2.5 && mainContent.scrollTop <= document.querySelector('.landing').offsetHeight*3.5)
     {
@@ -95,7 +118,14 @@ mainContent.addEventListener("scroll", () => {
         circle3.classList.remove('circleactive');
         circle4.classList.add('circleactive');
         circle5.classList.remove('circleactive');
+        circle6.classList.remove('circleactive');
+        upButton.querySelector('.material-icons.md-72').classList.remove('anim');
         scroll = 3;
+        if (scroll != currentscroll)
+        {
+            tl.to(mainContent, {duration: 0.5, scrollTo: document.querySelector('.landing').offsetHeight*scroll});
+            currentscroll = scroll;
+        }
     }
 
     else if (mainContent.scrollTop > document.querySelector('.landing').offsetHeight*3.5 && mainContent.scrollTop <= document.querySelector('.landing').offsetHeight*4.5)
@@ -106,11 +136,35 @@ mainContent.addEventListener("scroll", () => {
         circle3.classList.remove('circleactive');
         circle4.classList.remove('circleactive');
         circle5.classList.add('circleactive');
+        circle6.classList.remove('circleactive');
         scroll = 4;
+        if (scroll != currentscroll)
+        {
+            tl.to(mainContent, {duration: 0.5, scrollTo: document.querySelector('.landing').offsetHeight*scroll});
+            currentscroll = scroll;
+        }
+    }
+
+    else if (mainContent.scrollTop > document.querySelector('.landing').offsetHeight*4.5 && mainContent.scrollTop <= document.querySelector('.landing').offsetHeight*5.5)
+    {
+        upButton.classList.remove('hidden');
+        circle1.classList.remove('circleactive');
+        circle2.classList.remove('circleactive');
+        circle3.classList.remove('circleactive');
+        circle4.classList.remove('circleactive');
+        circle5.classList.remove('circleactive');
+        circle6.classList.add('circleactive');
+        upButton.querySelector('.material-icons.md-72').classList.add('anim');
+        scroll = 5;
+        if (scroll != currentscroll)
+        {
+            tl.to(mainContent, {duration: 0.5, scrollTo: document.querySelector('.landing').offsetHeight*scroll});
+            currentscroll = scroll;
+        }
     }
 
 
-    if (mainContent.scrollTop < document.querySelector('.landing').offsetHeight*4-100)
+    if (mainContent.scrollTop < document.querySelector('.landing').offsetHeight*5-100)
     {
         downButton.classList.remove('hidden');
     }

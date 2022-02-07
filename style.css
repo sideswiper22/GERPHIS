@@ -18,7 +18,7 @@
 }
 
 body {
-    background-color: #c8c8c8;
+    background-color: #c4c4c4;
 }
 
 h1 {
@@ -75,6 +75,19 @@ button {
     font-size: 36px;
 }
 
+.material-icons.md-48:hover {
+    cursor: pointer;
+    transition: font-size 0.1s ease-out;
+    
+    font-size: 60px;
+}
+
+.material-icons.md-48:active {
+    
+    transition: font-size 0.1s ease-out;
+    font-size: 48px;
+}
+
 .material-icons.md-72:hover {
     cursor: pointer;
     transition: font-size 0.1s ease-out;
@@ -83,9 +96,21 @@ button {
 }
 
 .material-icons.md-72:active {
-    
     transition: font-size 0.1s ease-out;
     font-size: 72px;
+}
+
+@keyframes buttonanim {
+    0%   {font-size: 72px}
+    50%  {font-size: 84px}
+    100% {font-size: 72px}
+}
+
+.material-icons.md-72.anim {
+    animation-name: buttonanim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    color: black;
 }
 
 /*styling for the black loading screen*/
@@ -95,7 +120,7 @@ button {
     height: 100%;
     z-index: 2;
     
-    background-color: #c8c8c8;
+    background-color: #c4c4c4;
 
     transition-duration: 0.5s;
 }
@@ -143,7 +168,7 @@ button {
 
 .header-button {
     width: 100px;
-    height: 100%;
+    height: 100px;
 
     display: flex;
     justify-content: center;
@@ -177,7 +202,7 @@ button {
     height: 16px;
     border: 3px solid white;
     border-radius: 50%;
-    margin: 24px
+    margin: 24px;
 }
 
 .circle2 {
@@ -185,7 +210,7 @@ button {
     height: 16px;
     border: 3px solid white;
     border-radius: 50%;
-    margin: 24px
+    margin: 24px;
 }
 
 .circle3 {
@@ -193,7 +218,7 @@ button {
     height: 16px;
     border: 3px solid white;
     border-radius: 50%;
-    margin: 24px
+    margin: 24px;
 }
 
 .circle4 {
@@ -201,7 +226,7 @@ button {
     height: 16px;
     border: 3px solid white;
     border-radius: 50%;
-    margin: 24px
+    margin: 24px;
 }
 
 .circle5 {
@@ -209,7 +234,15 @@ button {
     height: 16px;
     border: 3px solid white;
     border-radius: 50%;
-    margin: 24px
+    margin: 24px;
+}
+
+.circle6 {
+    width: 16px;
+    height: 16px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 24px;
 }
 
 .circleactive {
@@ -217,7 +250,7 @@ button {
     height: 24px;
     background: white;
     border-radius: 50%;
-    margin: 24px
+    margin: 24px;
 }
 
 .up-button {
@@ -255,6 +288,32 @@ button {
     bottom: 0;
     right: 50%;
     transform: translateX(50%);
+
+    pointer-events: auto;
+
+    transition: opacity 0.1s ease-out;
+}
+
+.left-button {
+    width: 128px;
+    height: 128px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    pointer-events: auto;
+
+    transition: opacity 0.1s ease-out;
+}
+
+.right-button {
+    width: 128px;
+    height: 128px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     pointer-events: auto;
 
@@ -328,6 +387,20 @@ button {
     pointer-events: none;
 }
 
+.topic-elements {
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+
+    pointer-events: none;
+}
+
 .main-content {
     z-index: 0;
     width: 100vw;
@@ -336,6 +409,20 @@ button {
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+#home.main-content {
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flexbox;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background-image: url(./Assets/Philippines.svg);
+    background-repeat: no-repeat;
+    background-position: 75%;
 }
 
 .main-content::-webkit-scrollbar {
@@ -369,19 +456,162 @@ button {
 }
 
 #m1.content {
-    background-color: rgb(53, 53, 53);
+    display: flex;
+    justify-content: center;
+
+    padding-left: 10vw;
+}
+
+#m1.content h1{
+    width: 40vw;
+    font-size: 6vh;
+    color: black;
+}
+
+#m1.content h2{
+    font-size: 4vh;
+    color: black;
+}
+
+#m1.content h3{
+    font-size: 2vh;
+    color: black;
+}
+
+#m1.graph{
+    height: 35vh;
+    width: 35vw;
+
+    background-image: url(./Assets/homepage1.png);
+    background-size: cover;
 }
 
 #m2.content {
-    
+    display: flex;
+    justify-content: center;
+
+    padding-left: 10vw;
+}
+
+#m2.content h1{
+    font-size: 10vh;
+    color: black;
+}
+
+#m2.content h2{
+    font-size: 3vh;
+    color: black;
+}
+
+#m2.content h3{
+    font-size: 2vh;
+    color: black;
 }
 
 #m3.content {
-    background-color: rgb(175, 67, 67);
+    background-color: #111111;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+#m3.content h1{
+    font-size: 15vh;
+}
+
+#m3.content h2{
+    font-size: 4vh;
+    padding-right: 5vw;
+}
+
+#m3.content h3{
+    font-size: 3vh;
+}
+
+#m3.iphoto {
+    height: 60vh;
+    width: 40vw;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url("./Assets/Info\ about\ Poverty1.jpg");
 }
 
 #m4.content {
+    background-image: url(./Assets/homepage3.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+#m4.content h1{
+    font-size: 15vh;
+    text-align: center;
+}
+
+#m4.content h2{
+    font-size: 4vh;
+    text-align: center;
+}
+
+#m4.content h3{
+    padding-top: 1vh;
+    font-size: 3vh;
+    text-align: center;
+}
+
+#m5.content {
+    background-color: #c4c4c4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+#m5.content h1{
+    font-size: 15vh;
+}
+
+#m5.content h2{
+    font-size: 3vh;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#m5.content h3{
+    font-size: 3vh;
+}
+
+.m5 {
+    height: 50vh;
     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#m51.iphoto {
+    height: 30vh;
+    width: 50vw;
+    border-radius: 5px;
+    background-image: url("./Assets/homepage5.png");
+    background-position: center;
+}
+
+#m52.iphoto {
+    height: 30vh;
+    width: 50vw;
+    border-radius: 5px;
+    background-image: url("./Assets/homepage4.png");
+    background-position: center;
 }
 
 #topic.content {
@@ -400,7 +630,6 @@ button {
 }
 
 .topic {
-    background-color: mediumaquamarine;
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -490,18 +719,61 @@ button {
 #impormasyon.content {
     padding-top: 164px;
     padding-bottom: 128px;
+
+    align-items: center;
 }
 
-#impormasyon.content h1{
+#impormasyon.content h1 {
     font-size: 72px;
     text-align: center;
 
     color: #12178B;
 }
 
+#impormasyon p {
+    font-size: 24px;
+}
+
+.twogrid {
+    width: 80%;
+    height: auto;
+    
+    display: grid;
+
+    justify-content: space-around;
+    grid-template-columns: 50% 40%;
+    grid-template-rows: auto;
+
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#alt.twogrid {
+    width: 80%;
+    height: auto;
+    
+    display: grid;
+
+    justify-content: space-around;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: auto;
+
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.grid-item {
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #lagay.content {
     padding-top: 164px;
     padding-bottom: 128px;
+    align-items: center;
 }
 
 #lagay.content h1{
@@ -516,6 +788,10 @@ button {
     text-align: center;
 
     color: #982828;
+}
+
+#lagay p {
+    font-size: 24px;
 }
 
 #gobyerno.content {
@@ -690,18 +966,25 @@ p {
     background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("./Assets/Panimula5.jpg");
 }
 
+#impormasyon1.iphoto {
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url("./Assets/Info\ about\ Poverty1.jpg");
+}
+
+#impormasyon2.iphoto {
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url("./Assets/Info\ about\ Poverty2.jpg");
+}
+
+#impormasyon3.iphoto {
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), url("./Assets/Info\ about\ Poverty3.jpg");
+}
+
 #lagay.iphoto-holder-2{
     height: 38vh;
 
     grid-template-columns: auto 35%;
-}
-
-#lagay1.iphoto p{
-    text-align: justify;
-    font-size: 24px;
-    font-style: normal;
-
-    padding: unset;
 }
 
 #lagay2.iphoto {
